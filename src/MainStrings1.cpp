@@ -13,6 +13,7 @@ Objectives of Strings-1 Lesson:
 
 */
 #include <stdio.h>
+#include<stdlib.h>
 #include "FunctionHeadersStrings1.h"
 
 int main(){

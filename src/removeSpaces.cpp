@@ -11,6 +11,23 @@ ERROR CASES: Return '\0' for invalid inputs.
 NOTES: Don't create new string.
 */
 
-char removeSpaces(char *str) {
-	return '\0';
+char removeSpaces(char *str) 
+{
+	int i = 0,k=0;
+	if (str != 0)
+	{
+		for (i = 0; str[i] != '\0'; i++)
+		{
+			if (str[i] != ' ')
+			{
+				str[k] = str[i];
+				k++;
+			}
+		}
+		str[k] = '\0';
+	}
+	else
+	{
+		return '\0';
+	}
 }
